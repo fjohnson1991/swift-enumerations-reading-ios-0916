@@ -39,15 +39,13 @@ enum Direction {
 let direction1 = Direction.up
 let direction2: Direction = .down
 var direction3: Direction = .right
-
-let direction = Direction.left
+let direction4: Direction = .left
 
 func playerDidMove(_ direction: Direction) {
     print("Player moved \(direction.excited)")
 }
 
-playerDidMove(direction1)
-playerDidMove(direction2)
-playerDidMove(direction3)
-
+playerDidMove(.up)
+playerDidMove(.down)
+playerDidMove(.right)
 playerDidMove(.left)
